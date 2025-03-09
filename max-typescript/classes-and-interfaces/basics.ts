@@ -14,15 +14,24 @@
 
 // A short cut so the properties don't have to be created and thus making the code longer
 
-class User {
-    // if you add public before a parameter, then TS will make a property of the same name behind the scenes 
-    // it will also assign the value that is recieved automatically to that property 
-  constructor(public name: string, public age: number) {}
-}
+// class User {
+//   // if you add public before a parameter, then TS will make a property of the same name behind the scenes
+//   // it will also assign the value that is recieved automatically to that property
+//   constructor(public name: string, public age: number) {}
 
-// creating a new user
+//   greet() {
+//     console.log('My age:' + this.age)
+//   }
+// }
 
-const joel = new User('Joel', 41)
-const fred = new User('Fred', 40)
+// // creating a new user
 
-console.log(joel, fred)
+// const joel = new User('Joel', 41)
+// const fred = new User('Fred', 40)
+
+// console.log(joel, fred)
+
+// public dictates taht the property can be accessed from outside the class
+// private dictates that the property can only be accessed from within the class
+// protected dictates that the property can only be accessed from within the class or from a class that extends it
+// readonly dictates that the property can only be read but not changed
